@@ -1,10 +1,14 @@
+*{
+    margin: auto;
+}
+
 body {
     background-color: black;
-    max-width: 950px;
+    max-width: 980px;
     margin: auto;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1em;
-    line-height: 4em;
+    display: block;
 }
 
 *{
@@ -16,7 +20,7 @@ header {
     background-position: center center;
     background-size: cover;
     height: 250px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: flex-start;
     padding-left: 10%
@@ -68,7 +72,7 @@ main {
 }
 
 main aside {
-    min-width: 40%;
+    min-width: 10%;
 }
 
 #start_page_text {
@@ -102,9 +106,10 @@ img {
     position: relative;
     padding-bottom: 50%;
     padding-top: 30px;
-    height: 0;
+    height: auto;
     overflow: hidden;
     margin: auto;
+    display: block;
 }
 
 .video_info iframe,
@@ -113,18 +118,20 @@ img {
     position: relative;
     top: 0;
     left: 0;
-    width: 725px;
-    height: 544px;
+    width: 350px;
+    height: 230px;
     margin: auto;
+    display: block;
 }
 
 .video_info_a {
     position: relative;
     padding-bottom: 50%;
     padding-top: 30px;
-    height: 0;
+    height: auto;
     overflow: hidden;
     margin: auto;
+    display: block;
 }
 
 .video_info_a iframe,
@@ -133,9 +140,10 @@ img {
     position: relative;
     top: 0;
     left: 0;
-    width: 725px;
-    height: 544px;
+    width: 350px;
+    height: 230px;
     margin: auto;
+    display: block;
 }
 
 p {

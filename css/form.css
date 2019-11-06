@@ -1,12 +1,24 @@
+*{
+    margin: auto;
+}
+
 body {
     background-color: black;
+    max-width: 950px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    line-height: 4em;
 }
+
 *{
     -webkit-text-fill-color: white;
 }
+
+
 nav {
 	overflow: hidden;
-	float: ceter;
+	float: center;
 }
 
 nav li {
@@ -37,3 +49,13 @@ label {
     display: block;
     margin: auto;
     }
+
+    main {
+        display: block;
+        margin: auto;
+    }
+
+    main aside {
+        min-width: 40%;
+    }
+
