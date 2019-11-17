@@ -1,158 +1,107 @@
-*{
-    margin: auto;
+:root{
+scroll-behavior: smooth;
+}
+
+.logo{
+    font-family: 'Luminari', fantasy;
+    font-style: italic;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: -1rem;  
 }
 
 body {
-    background-color: black;
-    max-width: 980px;
+    max-width: 100%;
     margin: auto;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
+    padding: 0 ;
+    background-color: black;
+}
+* { -webkit-text-fill-color: white
+}
+
+#start_page_text { 
+    background: url(../img/images.jpg);
     display: block;
+    width: 300px;
+    height: 140px;
+    text-align: center;
+    justify-content: space-around;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-*{
-    -webkit-text-fill-color: white;
+header nav .menu {
+	display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
 }
 
-header {
-    background-image: url("../img/images.jpg");
-    background-position: center center;
-    background-size: cover;
-    height: 250px;
-    display: block;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 10%
-}
-
-header h1 {
-    font-size: 10rem;
+header nav .menu a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 5px;
     color: white;
 }
 
-nav ul {
-    list-style-type: none;
-    list-style-position: inside;
-    margin: auto;
-    padding: 50px;
+header nav .menu a:hover {
+    border-bottom: 1px solid white;
+}
+input, textarea, button{
+    -webkit-text-fill-colorb: black;
 }
 
-aside img {
-    display: block;
+.intro h2 {
+    font-family: 'American Typewriter', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.intro img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.music-list article img {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
-footer p {
-    text-align: center;
-}
-nav {
-	overflow: hidden;
-    float: left;
+article{
+    border: 1px solid black;
 }
 
-nav li {
-	float: left;
-	list-style: none;
-    height: 100px
+ul.menu li{
+	display: contents;
+		margin-left: 100px;
 }
 
-nav li a {
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: whitesmoke;
-	padding: 30px 30px;
-	color: black;
-	text-shadow: 0 1px 0 white;
+.music-list article .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+@media (min-width: 560px) {
+    .music-list {
+        border-image-width: initial;
+        display: table-column;
+        grid-template-columns: column;
+        margin: 5px;
+        grid-gap: 10px;
     }
-
-main {
-    display: block;
-    margin: auto;
 }
 
-main aside {
-    min-width: 10%;
-}
-
-#start_page_text {
-    font-size: 120px;
-    text-align: center;
-}
-
-#start_page {
-    font-size: 60px;
-    text-align: center;
-}
-
-img {
-    width: 350px;
-    height: 230px;
-    display: block;
-    margin: auto;
-}
-
-#information{
-    text-align: center;
-    font-size: 30px;
-}
-
-#infoclip{
-    text-align: center;
-    font-size: 30px;
-}
-
-.video_info {
-    position: relative;
-    padding-bottom: 50%;
-    padding-top: 30px;
-    height: auto;
-    overflow: hidden;
-    margin: auto;
-    display: block;
-}
-
-.video_info iframe,
-.video_info object,
-.video_info embed {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 350px;
-    height: 230px;
-    margin: auto;
-    display: block;
-}
-
-.video_info_a {
-    position: relative;
-    padding-bottom: 50%;
-    padding-top: 30px;
-    height: auto;
-    overflow: hidden;
-    margin: auto;
-    display: block;
-}
-
-.video_info_a iframe,
-.video_info_a object,
-.video_info_a embed {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 350px;
-    height: 230px;
-    margin: auto;
-    display: block;
-}
-
-p {
-    text-indent: 150px;
-    text-align: justify;
-}
-
-h3 {
-    color: white;
-    text-align: center;
-    font-size: 50px;
+@media (min-width: 200px) {
+    .music-list {
+        grid-template-columns: column;
+    }
 }
