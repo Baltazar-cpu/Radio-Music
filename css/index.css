@@ -83,6 +83,7 @@ header .intro {
     flex-direction: column;
     justify-content: center;
     min-height: 500px;
+    text-align: bottom;
 }
 
 header .intro h2 {
@@ -93,44 +94,38 @@ header .intro h2 {
     margin-bottom: 2rem;
 }
 
-main .music-list article img {
-    width: 100%;
-    display: block;
+main .box article img {
+    width: 100px;
+    display: inline-block;
 }
-main .music-list article .buttons {
-    display: flex;
-    justify-content: space-around;
+main .box article .buttons {
+    display: inline-block;
+    justify-content: baseline;
     margin-top: 10px;
 }
 
 @media (min-width: 360px) {
-    main .music-list {
+    main .box {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
     }
 }
 
 @media (min-width: 550px) {
-    main .music-list {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 660px) {
-    main .music-list {
+    main .box {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media (min-width: 980px) {
-    main .music-list {
+@media (min-width: 660px) {
+    main .box {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (min-width: 1920px) {
-    main .music-list {
+@media (min-width: 980px) {
+    main .box {
         grid-template-columns: repeat(5, 1fr);
     }
 }
