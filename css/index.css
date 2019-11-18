@@ -1,13 +1,18 @@
 :root{
-scroll-behavior: smooth;
+    font-family: 'American Typewriter', serif;
+    font-size: italic;
+    --main-color: black;
+    --accent-color: black;
+    scroll-behavior: smooth;
 }
 
-.logo{
-    font-family: 'Luminari', fantasy;
-    font-style: italic;
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: -1rem;  
+h1, h3, p, div, nav, header, footer {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: black;
 }
 
 body {
@@ -16,11 +21,11 @@ body {
     padding: 0 ;
     background-color: black;
 }
-* { -webkit-text-fill-color: white
+
+* { -webkit-text-fill-color: white;
 }
 
-#start_page_text { 
-    background: url(../img/images.jpg);
+#start_page_text {
     display: block;
     width: 300px;
     height: 140px;
@@ -31,6 +36,14 @@ body {
     background-position: center;
 }
 
+header nav .logo {
+    font-family: 'Luminari', fantasy;
+    font-style: italic;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: -1rem;  
+}
+
 header nav .menu {
 	display: flex;
     list-style-type: none;
@@ -38,70 +51,86 @@ header nav .menu {
     padding: 0;
 }
 
-header nav .menu a{
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
+header nav .menu a {
     border: 1px solid transparent;
     padding: 5px;
-    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+@media (min-width: 360px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header .menu {
+        flex: 1;
+    }
 }
 
 header nav .menu a:hover {
-    border-bottom: 1px solid white;
-}
-input, textarea, button{
-    -webkit-text-fill-colorb: black;
+    border-bottom: 1px solid var(--accent-color);
 }
 
-.intro h2 {
+header .intro {
+    background-image: url(../img/images.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+}
+
+header .intro h2 {
     font-family: 'American Typewriter', serif;
     font-style: italic;
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: white;
+    margin-bottom: 2rem;
 }
 
-.intro img {
+main .music-list article img {
     width: 100%;
-    height: 100%;
-    margin: auto;
+    display: block;
 }
-
-.music-list article img {
+main .music-list article .buttons {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-article{
-    border: 1px solid black;
-}
-
-ul.menu li{
-	display: contents;
-		margin-left: 100px;
-}
-
-.music-list article .buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
     margin-top: 10px;
 }
 
-@media (min-width: 560px) {
-    .music-list {
-        border-image-width: initial;
-        display: table-column;
-        grid-template-columns: column;
-        margin: 5px;
+@media (min-width: 360px) {
+    main .music-list {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-gap: 10px;
     }
 }
 
-@media (min-width: 200px) {
-    .music-list {
-        grid-template-columns: column;
+@media (min-width: 550px) {
+    main .music-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 660px) {
+    main .music-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    main .music-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1920px) {
+    main .music-list {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
