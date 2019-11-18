@@ -55,7 +55,7 @@ header nav .menu a:hover {
     border-bottom: 1px solid var(--accent-color);
 }
 
-#playlist {
-    width: 50px;
-    text-align: right;
+main section article audio controls {
+    width: 100%;
+    margin: auto;
 }

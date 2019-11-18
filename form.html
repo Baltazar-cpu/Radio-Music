@@ -10,43 +10,46 @@
 </head>
 <body>
 <header>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Головна</a>
-            </li>
-            <li>
-                 <a href="playlist.html">Плейлист</a>
-            </li>
-        </ul>
-    </nav>
+    <nav class="#start_page_text">
+		<div class="logo">Radio Music</div>
+			<ul class="menu">
+				<li>
+					<a href="home">Головна</a>
+				</li>
+				<li>
+                    <a href="playlist.html">Плейлист</a>
+				</li>
+			</ul>
+        </dif>
+	</nav>
 </header>
 <br>
 <main>
-    <section id="registration">
+    <footer>
         <h2 id="reg">
-        Реєстрація
+        Send message:
         </h2>
+    </footer>
+    <section id="registration">
         <form action="https://formspree.io/xwkedbee" method="POST">
 			<label>
             First name:
-            <br>
-            <input type="text" name="firs-name" placeholder="First name">
+                <input class="message" name="firs-name" placeholder="First name">
             </label>
-            <br>
 			<label>
             Last name:
-            <br>
-            <input type="text" name="last-name" placeholder="Last name">
+                <input class="message" name="last-name" placeholder="Last name">
             </label>
-			<br>
 			<label>
             Email:
-            <br>
-            <input type="text" name="email" placeholder="Email">
+                <input class="message" name="email" placeholder="Email">
             </label>
-			<br>
-			<input type="submit" value="Regisration">
+            <label>
+            Textarea:
+                <textarea class="message" name="message" placeholder="Message"></textarea>
+            </label>
+            <br>
+            <input class="message" type="submit" value="Send">
         </form>
     </section>
 </body>

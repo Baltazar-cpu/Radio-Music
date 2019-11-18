@@ -129,3 +129,8 @@ main .box article .buttons {
         grid-template-columns: repeat(5, 1fr);
     }
 }
+
+.link {
+	display: flex;
+	justify-content: center;
+}
