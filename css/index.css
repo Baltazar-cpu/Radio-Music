@@ -6,8 +6,8 @@
     scroll-behavior: smooth;
 }
 
-h1, h3, p, div, nav, header, footer {
-    margin: 0;
+h1, h3, h4, p, div, nav, header, footer {
+    margin: auto;
     padding: 0;
 }
 
@@ -83,7 +83,7 @@ header .intro {
     flex-direction: column;
     justify-content: center;
     min-height: 500px;
-    text-align: bottom;
+    text-align: center;
 }
 
 header .intro h2 {
@@ -130,9 +130,21 @@ main .box article .buttons {
     }
 }
 
-.link {
-	font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+.network .fleft a {
+	height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: top;
 }
+
+.network .fleft a img {
+    width: 100%;
+}
+
+.network .groups {
+    font-family: 'Luminari', fantasy;
+    font-style: italic;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: -1rem;
+)
