@@ -1,4 +1,4 @@
-var x = 
+let x = 
 document.getElementById("myAudio");
 
 function playAudio() {
