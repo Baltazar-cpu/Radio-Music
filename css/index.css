@@ -20,7 +20,7 @@ body {
     max-width: 100%;
     margin: auto;
     padding: 0 ;
-    background-color: black;
+    background-color: rgba(0,0,0,0.5);
 }
 
 * { -webkit-text-fill-color: white;
@@ -40,19 +40,20 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(0,0,0,0.5);
 }
 
 header nav .logo {
     font-family: 'Luminari', fantasy;
-    font-style: italic;
     text-shadow: 5px 5px;
     font-size: 4rem;
     text-align: center;
-    margin-bottom: -1rem;  
+    margin-bottom: -1rem;
 }
 
 header nav .menu {
 	display: flex;
+    background-color: rgba(0,0,0,0.5);
     list-style-type: none;
     justify-content: space-around;
     padding: 0;
@@ -95,6 +96,7 @@ header nav .menu a:hover {
 header .intro {
     min-height: 500px;
     text-align: center;
+    background-color: rgba(0,0,0,0.5);
 }
 
 header .intro h2 {
@@ -108,12 +110,13 @@ header .intro h2 {
 .music {
     text-align: center;
     width: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 main .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
-    background-color: rgba(0,0,0,0.5);;
+    background-color: rgba(0,0,0,0.5);
     padding: 10px;
     width: 100%;
 }
