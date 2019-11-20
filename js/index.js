@@ -1,9 +1,9 @@
 $(document).ready(function () {
      $('.playAudio').on('click', function () {
-        $(this).parents('.buttons').find('.myAudio').trigger('play');
+        $(this).parents('.buttons').find('.mpegAudio').trigger('play');
   });
    $('.pauseAudio').on('click', function () {
-        $(this).parents('body').find('.myAudio').trigger('pause');
+        $(this).parents('body').find('.mpegAudio').trigger('pause');
   });
 });
 

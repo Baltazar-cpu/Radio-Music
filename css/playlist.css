@@ -5,8 +5,9 @@
 }
 
 body {
-    background: url(../img/images.jpg) no-repeat center fixed;
-    max-width: 100%;
+    background: url(../img/images.jpg);
+    width: 100%;
+    max-width: 1920px;
     margin: auto;
     padding: 0 ;
     background-color: rgba(0,0,0,0.5);
