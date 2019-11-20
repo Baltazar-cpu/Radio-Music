@@ -5,6 +5,7 @@
 }
 
 body {
+    background: url(../img/images.jpg) no-repeat center fixed;
     max-width: 100%;
     margin: auto;
     padding: 0 ;
@@ -58,4 +59,15 @@ header nav .menu a:hover {
 main section article audio controls {
     width: 100%;
     margin: auto;
+}
+
+footer .fb-share-button {
+    width: 100%;
+    text-align:  center;
+    background: black;
+}
+
+p {
+    text-align:  center;
+    width: 100%;
 }

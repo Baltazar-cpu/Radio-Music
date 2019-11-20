@@ -28,30 +28,42 @@
     </header>
 <br>
     <main>
-        <h2 id="reg">Send message:</h2>
+        <h2 id="reg">Надішліть нам повідомлення:</h2>
         <section id="registration">
             <form action="https://formspree.io/xwkedbee" method="POST">
 			    <label>
-                First name:
-                    <input class="message" name="firs-name" placeholder="First name">
+                Ім'я:
+                    <input class="message" name="firs-name" placeholder="Ім'я:">
                 </label>
 			    <label>
-                Last name:
-                    <input class="message" name="last-name" placeholder="Last name">
+                Прізвище:
+                    <input class="message" name="last-name" placeholder="Прізвище:">
                 </label>
 			    <label>
-                Email:
-                    <input class="message" name="email" placeholder="Email">
+                @-пошта:
+                    <input class="message" name="email" placeholder="@-mail">
                 </label>
                 <label>
-                Textarea:
-                    <textarea class="message" name="message" placeholder="Message"></textarea>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Повідомлення:</span>
+                        </div>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Введіть повідомлення:"></textarea>
+                    </div>
                 </label>
                 <br>
-                <input class="message" type="submit" value="Send">
+                <div class="row">
+                    <input type="submit" value="Відправити">
+                </div>
             </form>
         </section>
     </main>
+    <br>
+    <footer>
+        <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100008649488475" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100008649488475&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Ми тут!</a></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v5.0"></script>
+        <p>© Radio Music</p>
+	</footer>
 </body>
 
 </html>

@@ -16,6 +16,7 @@ submit .registra {
 }
 
 body {
+    background: url(../img/images.jpg) no-repeat center fixed;
     max-width: 100%;
     margin: auto;
     padding: 0 ;
@@ -39,6 +40,7 @@ body {
 header nav .logo {
     font-family: 'Luminari', fantasy;
     font-style: italic;
+    text-shadow: 5px 5px;
     font-size: 4rem;
     text-align: center;
     margin-bottom: -1rem;  
@@ -100,9 +102,41 @@ label {
 }
 
 textarea {
-    display: block;
-    margin: auto;
+    width: 100%;
+    padding: 15px;
     background-color: black;
-    font-size: 20px;
-    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+    
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer .fb-share-button {
+    width: 100%;
+    text-align:  center;
+}
+
+p {
+    text-align:  center;
+    width: 100%;
 }

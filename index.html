@@ -5,13 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/microphone.png" type="img/microphone">
 	<title>Radio Music</title>
 	<link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="alternate" hreflang="en-us" href="http://en-us.example.com/page.html" />
 </head>
 
-<body>
+<body onload="startTime()"> 
+    <p id="txt"></p>
 	<header>
 		<nav class="#start_page_text">
 			<div class="logo">Radio Music</div>
@@ -26,20 +28,24 @@
                         <a href="playlist.html">Плейлист</a>
 				    </li>
 			    </ul>
-		    </nav>
-    <hr>
-    <div class="intro">
-        <h2>Intros are, perhaps, the most important feature of an audio story. A good intro hooks your audience and keeps them engaged.</h2>
-    </div>
+		</nav>
+        <nav class="search-light">
+            <form class="form-inline">
+                <input class="form-control" type="search" placeholder="Пошук" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Пошук</button>
+            </form>
+        </nav>
+        <div class="intro">
+            <h2>Вступ - це, мабуть, найважливіша особливість звукової історії. Гарне представництво приваблює вашу аудиторію та підтримує їх залучення.</h2>
+            <h2>Intros are, perhaps, the most important feature of an audio story. A good intro hooks your audience and keeps them engaged.</h2>
+        </div>
 	</header>
-    <br>
+    <hr>
 	<main>
-		<h2 id="music">Топ-10 за минулий місяць:</h2>
-        <hr>
-		<div class="box">
+		<h2 class="music">Топ-10 за минулий місяць:</h2>
+		<div class="grid-container">
 			<article>
 				<h3>Tones And I - Dance Monkey</h3>
-                <br>
 				<img src="img/one.jpg" alt="Tones And I - Dance Monkey">
                 <div class="buttons">
                     <audio class="myAudio">
@@ -51,7 +57,6 @@
 			</article>
 			<article>
 				<h3>Tiesto & Jonas Blue & Rita Ora - Ritual</h3>
-                <br>
 				<img src="img/two.jpg" alt="Tiesto & Jonas Blue & Rita Ora - Ritual">
 				<div class="buttons">
                     <audio class="myAudio">
@@ -74,7 +79,6 @@
 			</article>
 			<article>
 				<h3>Billie Eilish - Bad Guy</h3>
-                <br>
 				<img src="img/four.jpg" alt="Billie Eilish - Bad Guy">
                 <div class="buttons">
                     <audio class="myAudio">
@@ -97,7 +101,6 @@
 			</article>
 			<article>
 				<h3>Ofenbach - Rock It</h3>
-                <br>
 				<img src="img/six.jpg" alt="Ofenbach - Rock It">
                 <div class="buttons">
                     <audio class="myAudio">
@@ -120,7 +123,6 @@
 			</article>
 			<article>
 				<h3>Mohombi - Hello</h3>
-                <br>
 				<img src="img/eight.jpg" alt="Mohombi - Hello">
                 <div class="buttons">
                     <audio class="myAudio">
@@ -132,7 +134,6 @@
 			</article>
 			<article>
 				<h3>Ava Max - Sweet But Psycho</h3>
-                <br>
 				<img src="img/nine.jpg" alt="Ava Max - Sweet But Psycho">
                 <div class="buttons">
                     <audio class="myAudio">
@@ -161,7 +162,7 @@
     <footer>
         <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100008649488475" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100008649488475&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Ми тут!</a></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v5.0"></script>
-        <p>by Radio Musik</p>
+        <p>© Radio Music</p>
 	</footer>
 </body>
 
