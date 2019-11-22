@@ -16,18 +16,17 @@ submit .registra {
 }
 
 body {
-    background: url(../img/images.jpg);
+    background: url(../img/radioservice.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
-    background-color: rgba(0,0,0,0.5);
     width: 100%;
     max-width: 1920px;
     margin: auto;
     padding: 0;
 }
 
-* { -webkit-text-fill-color: white;
+* { -webkit-text-fill-color: black;
 }
 
 #clock {
@@ -51,32 +50,32 @@ body {
 .logo {
     font-family: 'Luminari', fantasy;
     font-style: italic;
-    text-shadow: 5px 5px;
+    text-shadow: 2px 2px;
     font-size: 4rem;
     text-align: left;
     margin-bottom: 1rem;
 }
 
 ul {
-  list-style-type: none;
-  margin: auto;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
 }
 
 li {
-  float: left;
+    float: left;
 }
 
 li a {
-  display: flex;
-  text-align: center;
-  padding: 1px 1px;
-  text-decoration: none;
-  font-family: 'Luminari', fantasy;
-  font-size: 40.5px;
-  margin: auto;
+    display: flex;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    font-family: 'Luminari', fantasy;
+    font-size: 40.5px;
+    margin: auto;
 }
 
 @media (min-width: 360px) {
@@ -91,11 +90,11 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;;
+    background-color: green;
 }
 
 .active {
-  background-color: red;
+    background-color: red;
 }
 
 main {
@@ -107,12 +106,11 @@ main {
 #reg {
     font-size: 30px;
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
     margin: auto;
 }
 
 input {
-    background-color: rgba(0,0,0,0.5);
+    background-color: white;
     font-size: 20px;
     display: block;
     margin: auto;
@@ -121,7 +119,6 @@ input {
 }
 
 label {
-    background-color: rgba(0,0,0,0.5);
     width: 50%;
     height: 50%;
     display: block;
@@ -131,18 +128,18 @@ label {
 textarea {
     width: 91%;
     padding: 30px;
-    background-color: rgba(0,0,0,0.5);
-    border: 3px solid #ccc;
+    background-color: white;
+    border: 3px solid black;
     border-radius: 4px;
     resize: vertical;
     margin: auto;
 }
 
 input[type=submit] {
-    background-color: rgba(0,0,0,0.5);
+    background-color: white;
+    border: 3px solid black;
     color: white;
     padding: 10px 10px;
-    border: none;
     border-radius: 1px;
     cursor: pointer;
     float: center;
@@ -150,14 +147,14 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: lightgray;
+    background-color: gray;
 }
 
 footer .fb-share-button {
     margin: auto;
     text-align: center;
     display: block;
-    border: 3px solid;
+    border: 1px solid;
     padding: 10px;
 }
 
