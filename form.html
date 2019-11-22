@@ -16,16 +16,15 @@
     <header>
         <nav class="#start_page_text">
 		    <div class="logo">Radio Music</div>
-			    <ul class="menu">
-				    <li>
-					    <a href="index.html">Головна</a>
-				    </li>
-				    <li>
-                        <a href="playlist.html">Плейлист</a>
-				    </li>
+			    <ul>
+				    <li><a href="index.html" class="active">Головна</a></li>
+                    <li><a href="playlist.html">Плейлист</a></li>
 			    </ul>
             </dif>
 	    </nav>
+        <div id="clock">
+            <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+        </div>
     </header>
     <br>
     <main>
@@ -49,7 +48,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Повідомлення</span>
                         </div>
-                        <textarea class="form-control" aria-label="With textarea" placeholder="Введіть повідомлення:"></textarea>
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Введіть повідомлення:"></textarea>
                     </div>
                 </label>
                 <br>
@@ -58,8 +57,8 @@
                 </div>
             </form>
         </section>
+        <script src="js/form.js"></script>
     </main>
-    <br>
     <footer>
         <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100008649488475" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100008649488475&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Ми тут!</a></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v5.0"></script>

@@ -12,23 +12,19 @@
     <title>Radio Music</title>
 </head>
 
-<body onload="startTime()"> 
-    <p id="txt"></p>
+<body>
 	<header>
 		<nav class="#start_page_text">
 			<div class="logo">Radio Music</div>
-			    <ul class="menu">
-				    <li>
-					    <a href="index.html">Головна</a>
-				    </li>
-				    <li>
-					    <a href="form.html">Сервіс</a>
-				    </li>
-				    <li>
-                        <a href="playlist.html">Плейлист</a>
-				    </li>
+			    <ul>
+				    <li><a href="index.html" class="active">Головна</a></li>
+                    <li><a href="form.html">Сервіс</a></li>
+                    <li><a href="playlist.html">Плейлист</a></li>
 			    </ul>
 		</nav>
+        <div id="clock">
+            <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+        </div>
         <nav class="search-light">
             <form class="form-inline">
                 <input class="form-control" type="search" placeholder="Пошук" aria-label="Search">
@@ -40,9 +36,13 @@
             <h2>Intros are, perhaps, the most important feature of an audio story. A good intro hooks your audience and keeps them engaged.</h2>
         </div>
 	</header>
-    <hr>
 	<main>
-		<h2 class="music">Топ-10 за минулий місяць:</h2>
+        <dialog>
+            <button><p><a href="JavaScript:newPopup('https://www.gismeteo.ua/ua/weather-lviv-4949/');">Відкрити</a></p></button>
+            <button id="close">Закрити</button>
+        </dialog>
+        <button id="show">Погода у Львові на 22.11.2019 р.</button>
+        <h2 class="music">Топ-10 за минулий місяць:</h2>
 		<div class="grid-container">
 			<article>
 				<h3>Tones And I - Dance Monkey</h3>
@@ -155,7 +155,6 @@
 				</div>
 			</article>
 		</div>
-        <hr>
         <script src="js/jquery.js"></script>
         <script src="js/index.js"></script>
 	</main>

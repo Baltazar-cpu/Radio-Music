@@ -7,20 +7,46 @@ $(document).ready(function () {
   });
 });
 
-function startTime() {
-    let tm=new Date();
-    let h=tm.getHours();
-    let m=tm.getMinutes();
-    let s=tm.getSeconds();
-        m=checkTime(m);
-        s=checkTime(s);
-        document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-        t=setTimeout('startTime()',500);
+let timerId;
+
+    function update() {
+      let clock = document.getElementById('clock');
+      let date = new Date();
+
+      let hours = date.getHours();
+      if (hours < 10) hours = '0' + hours;
+      clock.children[0].innerHTML = hours;
+
+      let minutes = date.getMinutes();
+      if (minutes < 10) minutes = '0' + minutes;
+      clock.children[1].innerHTML = minutes;
+
+      let seconds = date.getSeconds();
+      if (seconds < 10) seconds = '0' + seconds;
+      clock.children[2].innerHTML = seconds;
+    }
+    
+    function clockStart() {
+      timerId = setInterval(update, 1000);
+      update();
+    }
+
+    function clockStop() {
+      clearInterval(timerId);
+    }
+
+    clockStart();
+
+let dialog = document.querySelector('dialog');
+document.querySelector('#show').onclick = function() {
+    dialog.show();
+};
+document.querySelector('#close').onclick = function() {
+    dialog.close();
+};
+
+function newPopup(url) {
+    popupWindow = window.open(
+        url,'popUpWindow','height=500,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');
 }
 
-function checkTime(i) {
-    if (i<10) {
-        i="0" + i;
-    }
-    return i;
-}
