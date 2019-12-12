@@ -16,10 +16,9 @@ button {
 }
 
 body {
+    display: block;
     background-color: white;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
+    background-position: center;
     width: 100%;
     max-width: 1920px;
     margin: auto;
@@ -151,9 +150,4 @@ p {
     text-align: bottom;
     width: 100%;
     margin: auto;
-}
-
-dialog {
-    border-radius: 20px;
-    background: green;
 }

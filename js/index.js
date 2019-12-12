@@ -50,3 +50,7 @@ function newPopup(url) {
         url,'popUpWindow','height=500,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');
 }
 
+if (typeof jQuery == 'undefined') { 
+  var i = "i";
+  document.write('<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></scr' + i + 'pt>');
+}
